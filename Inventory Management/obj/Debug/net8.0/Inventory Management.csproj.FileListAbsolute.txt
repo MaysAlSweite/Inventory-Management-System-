@@ -1,0 +1,15 @@
+c:\Users\Hp\OneDrive\Desktop\Inventory Management System\Inventory Management\bin\Debug\net8.0\Inventory Management.exe
+c:\Users\Hp\OneDrive\Desktop\Inventory Management System\Inventory Management\bin\Debug\net8.0\Inventory Management.deps.json
+c:\Users\Hp\OneDrive\Desktop\Inventory Management System\Inventory Management\bin\Debug\net8.0\Inventory Management.runtimeconfig.json
+c:\Users\Hp\OneDrive\Desktop\Inventory Management System\Inventory Management\bin\Debug\net8.0\Inventory Management.dll
+c:\Users\Hp\OneDrive\Desktop\Inventory Management System\Inventory Management\bin\Debug\net8.0\Inventory Management.pdb
+c:\Users\Hp\OneDrive\Desktop\Inventory Management System\Inventory Management\obj\Debug\net8.0\Inventory Management.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Hp\OneDrive\Desktop\Inventory Management System\Inventory Management\obj\Debug\net8.0\Inventory Management.AssemblyInfoInputs.cache
+c:\Users\Hp\OneDrive\Desktop\Inventory Management System\Inventory Management\obj\Debug\net8.0\Inventory Management.AssemblyInfo.cs
+c:\Users\Hp\OneDrive\Desktop\Inventory Management System\Inventory Management\obj\Debug\net8.0\Inventory Management.csproj.CoreCompileInputs.cache
+c:\Users\Hp\OneDrive\Desktop\Inventory Management System\Inventory Management\obj\Debug\net8.0\Inventory Management.sourcelink.json
+c:\Users\Hp\OneDrive\Desktop\Inventory Management System\Inventory Management\obj\Debug\net8.0\Inventory Management.dll
+c:\Users\Hp\OneDrive\Desktop\Inventory Management System\Inventory Management\obj\Debug\net8.0\refint\Inventory Management.dll
+c:\Users\Hp\OneDrive\Desktop\Inventory Management System\Inventory Management\obj\Debug\net8.0\Inventory Management.pdb
+c:\Users\Hp\OneDrive\Desktop\Inventory Management System\Inventory Management\obj\Debug\net8.0\Inventory Management.genruntimeconfig.cache
+c:\Users\Hp\OneDrive\Desktop\Inventory Management System\Inventory Management\obj\Debug\net8.0\ref\Inventory Management.dll
