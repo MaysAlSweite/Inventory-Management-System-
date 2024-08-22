@@ -2,7 +2,7 @@
 public class Inventory
 {
     private static List<Product> Products = new();
-    public static int GetInt(string question)
+    private static int GetInt(string question)
     {
         int result = 0;
         bool validInput = false;
@@ -10,8 +10,10 @@ public class Inventory
         while (!validInput)
         {
             Console.WriteLine(question);
-            string input = Console.ReadLine();
+            string? input = Console.ReadLine();
 
+            if(input==null) { Console.WriteLine("Invalid input. Please enter a valid number."); }
+            else{
             try
             {
                 result = Convert.ToInt32(input);
@@ -20,7 +22,7 @@ public class Inventory
             catch (FormatException)
             {
                 Console.WriteLine("Invalid input. Please enter a valid number.");
-            }
+            }}
         }
 
         return result;
@@ -41,4 +43,13 @@ public class Inventory
             Products.Add(p);
         }
     }
+
+    public static void ViewAllProducts()
+    {
+        foreach (var item in Products)
+        {
+            Console.WriteLine($"ID: {item.Id},  Name: {item.Name},  Price: {item.Price},  Quantity: {item.Quantity}");
+        }
+    }
+
 }
