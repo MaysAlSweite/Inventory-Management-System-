@@ -11,10 +11,12 @@ internal class Program
             Console.WriteLine("Hello ! Please Enter Your Choice");
             Console.WriteLine("1.Add new product ");
             Console.WriteLine("2.View all products ");
+            Console.WriteLine("3.Edit a product ");
             Console.WriteLine("==> Your Choice : ");
 
             string? choice = Console.ReadLine();
-            menu(choice);
+            if (choice != null)
+            { menu(choice); }
         }
         while (!exit);
 
@@ -28,6 +30,9 @@ internal class Program
                     break;
                 case "2":
                     Inventory.ViewAllProducts();
+                    break;
+                case "3":
+                    Inventory.EditProduct();
                     break;
                 case "5":
                     exit = true; break;
