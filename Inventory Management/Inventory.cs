@@ -149,4 +149,25 @@ public class Inventory
         }
 
     }
+
+    public static void SearchProduct()
+    {
+        Console.WriteLine("Enter Product name :");
+        string? name = Console.ReadLine();
+        bool exist = false;
+
+        if (!string.IsNullOrWhiteSpace(name))
+        {
+            foreach (var item in Products)
+            {
+                if (item.Name == name)
+                {
+                    exist = true;
+                    Console.WriteLine("Product exists as following :");
+                    Console.WriteLine($"ID: {item.Id},  Name: {item.Name},  Price: {item.Price},  Quantity: {item.Quantity}");
+                }
+            }
+            if (!exist) { Console.WriteLine("Product doesn't exist in the inventory"); }
+        }
+    }
 }

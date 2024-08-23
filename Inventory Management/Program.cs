@@ -13,6 +13,8 @@ internal class Program
             Console.WriteLine("2.View all products ");
             Console.WriteLine("3.Edit a product ");
             Console.WriteLine("4.Delete a product ");
+            Console.WriteLine("5.Search for a product ");
+            Console.WriteLine("6.Exit ");
             Console.WriteLine("==> Your Choice : ");
 
             string? choice = Console.ReadLine();
@@ -39,6 +41,9 @@ internal class Program
                     Inventory.DeleteProduct();
                     break;
                 case "5":
+                    Inventory.SearchProduct();
+                    break;
+                case "6":
                     exit = true; break;
                 default:
                     Console.WriteLine("Invalid selection. Please try again.");
