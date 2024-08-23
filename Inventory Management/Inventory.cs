@@ -97,7 +97,7 @@ public class Inventory
     {
         Console.WriteLine("Enter Product name :");
         string? name = Console.ReadLine();
-
+        bool exist = false;
         if (!string.IsNullOrWhiteSpace(name))
         {
             foreach (var item in Products)
@@ -105,6 +105,7 @@ public class Inventory
                 if (item.Name == name)
                 {
                     //product exists
+                    exist = true;
                     Console.WriteLine($"Editing product: {item.Name}");
                     string newName = GetName();
                     if (newName != "error")
@@ -120,12 +121,31 @@ public class Inventory
                         //break
                     }
                 }
-                else
+
+            }
+            if (!exist) { Console.WriteLine("Product doesn't exist in the inventory, Edit process failed"); }
+        }
+
+    }
+
+    public static void DeleteProduct()
+    {
+        Console.WriteLine("Enter Product name :");
+        string? name = Console.ReadLine();
+        bool exist = false;
+
+        if (!string.IsNullOrWhiteSpace(name))
+        {
+            for (int i = 0; i < Products.Count; i++)
+            {
+                if (Products[i].Name == name)
                 {
-                    Console.WriteLine("Product doesn't exist in the inventory, Edit process failed");
-                    //break }
+                    exist = true;
+                    Products.Remove(Products[i]);
+                    Console.WriteLine("Product is successfully removed");
                 }
             }
+            if (!exist) { Console.WriteLine("Product doesn't exist in the inventory, Delete process failed"); }
         }
 
     }

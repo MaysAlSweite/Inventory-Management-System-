@@ -12,6 +12,7 @@ internal class Program
             Console.WriteLine("1.Add new product ");
             Console.WriteLine("2.View all products ");
             Console.WriteLine("3.Edit a product ");
+            Console.WriteLine("4.Delete a product ");
             Console.WriteLine("==> Your Choice : ");
 
             string? choice = Console.ReadLine();
@@ -33,6 +34,9 @@ internal class Program
                     break;
                 case "3":
                     Inventory.EditProduct();
+                    break;
+                case "4":
+                    Inventory.DeleteProduct();
                     break;
                 case "5":
                     exit = true; break;
